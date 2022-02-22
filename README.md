@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This project studies how to distributed train model in `Pytorch` and analyzes its efficiency. We run the same code on a GPU, two GPUs and four GPUs (two GPUs on both nodes), and record their runtime. 
+This project studies how to distributed train model in `Pytorch` and analyzes its efficiency. We run the same code on a GPU, two GPUs and four GPUs (two GPUs per node), and record their runtime. 
 
-Experiments show that training model on 2 GPUs can save 40 of time than that on single GPU, but when done on 4 GPUs(2 GPUs per node) it will cost more time. We think it is possible that our dataset (cifar100) is too small. Nonetheless, it suggests that we should run code on a single node instead of multiple nodes to achieve better performance.
+Experiments show that training model on 2 GPUs can save 40 of time than that on single GPU, but when done on 4 GPUs (2 GPUs per node) it will cost more time. We think it is possible that our dataset (cifar100) is too small. Nonetheless, it suggests that we should run code on a single node instead of multiple nodes to achieve better performance.
 
 In addition, We provide a template of `Pytorch` distributed training.
 
